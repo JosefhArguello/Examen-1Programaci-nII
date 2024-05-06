@@ -1,19 +1,15 @@
-
 package examen.pkg1.kener.y.josefh;
-
 import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.Font;
-import java.awt.Graphics;
 import java.awt.event.ActionEvent;
 import javax.swing.ImageIcon;
-
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 
-public class   Examen1KenerYJosefh  extends JPanel{
+public class  Examen1KenerYJosefh  extends JPanel{
     
     JPanel menu;
     JPanel panelInicial;
@@ -33,18 +29,14 @@ public class   Examen1KenerYJosefh  extends JPanel{
         panelInicial.repaint();
         panelInicial.revalidate();
     }
-    public void panini(Graphics g){
-        ImageIcon Imagen = new ImageIcon(getClass().getResource("imagenes/Recomendaciones-seguridadvial-para-ninios.png"));
-        g.drawImage(Imagen.getImage(), 0, 0, getWidth(), getHeight(), this);
-        setOpaque(false);
-        super.paint(g);
-    }
+  
     public Examen1KenerYJosefh(){
         JFrame frame = new JFrame("Manual de transito");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setSize(1000, 1000);
         frame.setLocationRelativeTo(null);
         frame.setVisible(true);
+
         
         Color Azul = new Color(1, 11, 64);
         Color Gris = new Color(216, 217, 215); 
@@ -55,7 +47,7 @@ public class   Examen1KenerYJosefh  extends JPanel{
         menu.setBounds(0, 0, 1000, 50);
         menu.setBackground(Gris);
         frame.add(menu);
-        menu.setVisible(false);
+        menu.setVisible(true);
         
         
         panelInicial = new JPanel(); 
@@ -63,7 +55,7 @@ public class   Examen1KenerYJosefh  extends JPanel{
         panelInicial.setBounds(0, 30, 1000, 950);
         panelInicial.setBackground(Azul);
         frame.add(panelInicial);
-        panelInicial.setVisible(false);
+        panelInicial.setVisible(true);
         
         panelIngresar = new JPanel();
        
@@ -80,7 +72,7 @@ public class   Examen1KenerYJosefh  extends JPanel{
         });
         
         
-        ImageIcon icono = new ImageIcon("imagenes/Recomendaciones-seguridadvial-para-ninios.png");
+        ImageIcon icono = new ImageIcon("examen\\pkg1\\kener\\y\\josefh\\images\\Recomendaciones-seguridadvial-para-ninios.png");
         imagenConsejos = new JLabel(icono);
         imagenConsejos.setBounds(20, 10, icono.getIconWidth(), icono.getIconHeight());
         panelInicial.add(imagenConsejos);
@@ -111,7 +103,7 @@ public class   Examen1KenerYJosefh  extends JPanel{
         menu.add(Menu);
         
     }
-
+     
     public static void main(String[] args) {
         Examen1KenerYJosefh a = new Examen1KenerYJosefh();
        
