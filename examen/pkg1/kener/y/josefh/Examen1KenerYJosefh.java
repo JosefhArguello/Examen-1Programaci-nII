@@ -6,7 +6,6 @@ import java.awt.Color;
 import java.awt.Font;
 import java.awt.Graphics;
 import java.awt.event.ActionEvent;
-import java.io.Serializable;
 import javax.swing.ImageIcon;
 
 import javax.swing.JButton;
@@ -14,7 +13,7 @@ import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 
-public class Examen1KenerYJosefh extends JPanel{
+public class   Examen1KenerYJosefh  extends JPanel{
     
     JPanel menu;
     JPanel panelInicial;
