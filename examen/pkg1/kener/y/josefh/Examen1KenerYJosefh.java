@@ -13,9 +13,8 @@ import javax.swing.JPanel;
 
 public class  Examen1KenerYJosefh  extends JPanel{
     
-    JPanel menu;
-    JPanel panelInicial;
-    JPanel panelIngresar;
+    private JPanel menu;
+    private JPanel panelIngresar;
 
     JButton Menu;
     
@@ -39,8 +38,7 @@ public class  Examen1KenerYJosefh  extends JPanel{
         frame.setVisible(true);
 
         Color Azul = new Color(1, 11, 64);
-        Color Gris = new Color(216, 217, 215); 
-       
+        
         panelIngresar = new JPanel(); 
         panelIngresar.setLayout(null); 
         panelIngresar.setBounds(0, 50, 1000, 950);

@@ -12,10 +12,10 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 
 public class PanelInicial extends JPanel {
-    JButton Beneficiosbicicleta;
-    JButton Beneficiostransporte;
-    JButton Consejosseguridad;
-    JButton Educacionseñales;
+    private JButton Beneficiosbicicleta;
+    private JButton Beneficiostransporte;
+    private JButton Consejosseguridad;
+    private JButton Educacionseñales;
 
     public void cambiarPanel(JPanel nuevoPanel){
         nuevoPanel.setSize(1000, 950);
@@ -27,6 +27,8 @@ public class PanelInicial extends JPanel {
     }
         public PanelInicial(){
             Color Azul = new Color(1, 11, 64);
+            Color Gris = new Color(216, 217, 215); 
+       
             Font Times = new Font("Times New Roman", Font.BOLD, 22); 
             
             setLayout(null); 
@@ -49,7 +51,7 @@ public class PanelInicial extends JPanel {
             Beneficiostransporte.setForeground(Color.WHITE);
             Beneficiostransporte.setBounds(20, 450, 400, 40);
             Beneficiostransporte.addActionListener((ActionEvent e) -> { 
-      
+                cambiarPanel(new BeneficiosTransporte());
             });
            
             Educacionseñales = new JButton("Educación sobre señales de tránsito");
@@ -65,6 +67,7 @@ public class PanelInicial extends JPanel {
             Beneficiosbicicleta.setForeground(Color.WHITE);
             Beneficiosbicicleta.setBounds(550, 450, 400, 40);
             Beneficiosbicicleta.addActionListener((ActionEvent e) -> { 
+                cambiarPanel(new BeneficiosBicicleta());
     });
     
             
