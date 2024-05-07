@@ -2,6 +2,7 @@ package examen.pkg1.kener.y.josefh;
 import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.Font;
+import java.awt.Image;
 import java.awt.event.ActionEvent;
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
@@ -71,13 +72,7 @@ public class  Examen1KenerYJosefh  extends JPanel{
         Consejosseguridad.addActionListener((ActionEvent e) -> { 
         });
         
-        
-        ImageIcon icono = new ImageIcon("examen\\pkg1\\kener\\y\\josefh\\images\\Recomendaciones-seguridadvial-para-ninios.png");
-        imagenConsejos = new JLabel(icono);
-        imagenConsejos.setBounds(20, 10, icono.getIconWidth(), icono.getIconHeight());
-        panelInicial.add(imagenConsejos);
-        frame.add(imagenConsejos);
-        
+      
         mostrarEmpleados = new JButton("Mostrar empleados");
         mostrarEmpleados.setFont(Times);
         mostrarEmpleados.setBackground(Azul);
@@ -102,6 +97,16 @@ public class  Examen1KenerYJosefh  extends JPanel{
         panelInicial.add(mostrarEmpleados);
         menu.add(Menu);
         
+        ImageIcon imageIcon = new ImageIcon("examen\\pkg1\\kener\\y\\josefh\\images\\Recomendaciones-seguridadvial-para-ninios.png");
+
+        Image image = imageIcon.getImage(); // Obtiene la imagen del ImageIcon
+        Image newImage = image.getScaledInstance(300, 300, Image.SCALE_SMOOTH); // Escala la imagen al tamaño deseado
+        imageIcon.setImage(newImage);
+        JLabel imageLabel = new JLabel(imageIcon);
+        imageLabel.setBounds(20,100,300,300);
+        panelInicial.add(imageLabel);
+        panelInicial.repaint();
+        panelInicial.revalidate();
     }
      
     public static void main(String[] args) {
