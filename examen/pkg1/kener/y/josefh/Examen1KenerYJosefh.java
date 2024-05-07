@@ -19,6 +19,7 @@ public class  Examen1KenerYJosefh  extends JPanel{
     
     //Botones
     JButton Menu;
+    JButton Beneficiosbicicleta;
     JButton Beneficiostransporte;
     JButton Consejosseguridad;
     //
@@ -48,10 +49,6 @@ public class  Examen1KenerYJosefh  extends JPanel{
         frame.add(menu);
         menu.setVisible(true);
         
-        
-        
-
-        
         panelInicial = new JPanel(); 
         panelInicial.setLayout(null); 
         panelInicial.setBounds(0, 30, 1000, 950);
@@ -66,14 +63,12 @@ public class  Examen1KenerYJosefh  extends JPanel{
         Font Times = new Font("Times New Roman", Font.BOLD, 22); 
         
         Consejosseguridad = new JButton("Consejos de seguridad vial");
-Consejosseguridad.setFont(Times); 
-Consejosseguridad.setBackground(Azul); 
-Consejosseguridad.setForeground(Color.WHITE);
-Consejosseguridad.setOpaque(false);
-Consejosseguridad.setBounds(20, 50, 300, 40);
-Consejosseguridad.addActionListener((ActionEvent e) -> { 
+        Consejosseguridad.setFont(Times); 
+        Consejosseguridad.setBackground(Azul); 
+        Consejosseguridad.setForeground(Color.WHITE);
+        Consejosseguridad.setBounds(20, 50, 300, 40);
+        Consejosseguridad.addActionListener((ActionEvent e) -> { 
 });
- 
         Beneficiostransporte = new JButton("Beneficios del transporte publico");
         Beneficiostransporte.setFont(Times);
         Beneficiostransporte.setBackground(Azul);
@@ -83,6 +78,14 @@ Consejosseguridad.addActionListener((ActionEvent e) -> {
   
         });
         
+        Beneficiosbicicleta = new JButton("Beneficios de usar la bicicleta");
+        Beneficiosbicicleta.setFont(Times); 
+        Beneficiosbicicleta.setBackground(Azul); 
+        Beneficiosbicicleta.setForeground(Color.WHITE);
+        Beneficiosbicicleta.setBounds(550, 450, 400, 40);
+        Beneficiosbicicleta.addActionListener((ActionEvent e) -> { 
+});
+
         Menu = new JButton("MENU");
         Menu.setFont(Times);
         Menu.setBackground(Azul);
@@ -91,14 +94,15 @@ Consejosseguridad.addActionListener((ActionEvent e) -> {
         Menu.addActionListener((ActionEvent e) -> { 
         
         });
-       
+
+        panelInicial.add(Beneficiosbicicleta);
         panelInicial.add(Consejosseguridad);
         panelInicial.add(Beneficiostransporte);
         menu.add(Menu);
         
         ImageIcon imageIcon1 = new ImageIcon("examen\\pkg1\\kener\\y\\josefh\\images\\Recomendaciones-seguridadvial-para-ninios.png");
         Image image1 = imageIcon1.getImage(); // Obtiene la imagen del ImageIcon
-        Image newImage1 = image1.getScaledInstance(300, 300, Image.SCALE_SMOOTH); // Escala la imagen al tamaño deseado
+        Image newImage1 = image1.getScaledInstance(300, 250, Image.SCALE_SMOOTH); // Escala la imagen al tamaño deseado
         imageIcon1.setImage(newImage1);
         JLabel imagenConsejos = new JLabel(imageIcon1);
         imagenConsejos.setBounds(20,100,300,300);
@@ -106,7 +110,7 @@ Consejosseguridad.addActionListener((ActionEvent e) -> {
  
         ImageIcon imageIcon2 = new ImageIcon("examen\\pkg1\\kener\\y\\josefh\\images\\6287.jpg");
         Image image2 = imageIcon2.getImage(); // Obtiene la imagen del ImageIcon
-        Image newImage2 = image2.getScaledInstance(400, 300, Image.SCALE_SMOOTH); // Escala la imagen al tamaño deseado
+        Image newImage2 = image2.getScaledInstance(300, 200, Image.SCALE_SMOOTH); // Escala la imagen al tamaño deseado
         imageIcon2.setImage(newImage2);
         JLabel Consejosseguridad = new JLabel(imageIcon2);
         Consejosseguridad.setBounds(20,500,400,300);
@@ -120,6 +124,14 @@ Consejosseguridad.addActionListener((ActionEvent e) -> {
         Fondo.setBounds(0, 30, 1000, 950);
         panelInicial.add(Fondo);
         
+        ImageIcon imageIcon4 = new ImageIcon("examen\\pkg1\\kener\\y\\josefh\\images\\6241331.jpg");
+        Image image4 = imageIcon4.getImage(); // Obtiene la imagen del ImageIcon
+        Image newImage4 = image4.getScaledInstance(300, 300, Image.SCALE_SMOOTH); // Escala la imagen al tamaño deseado
+        imageIcon4.setImage(newImage4);
+        JLabel Beneficiosbicicleta = new JLabel(imageIcon4);
+        Beneficiosbicicleta.setBounds(550, 450, 400, 400);
+        panelInicial.add(Beneficiosbicicleta);
+
         panelInicial.repaint();
         panelInicial.revalidate();
 
