@@ -91,7 +91,7 @@ public class Examen extends JPanel{
         siguiente.addActionListener((ActionEvent e) -> {    
             
         });
-        Array.datosAplicante("Eldatoolosdatosdelachingada", 1);;
+        Array.datosAplicante("EldatoolosdatosdelachingadaaS", 1);;
 
 }
 
