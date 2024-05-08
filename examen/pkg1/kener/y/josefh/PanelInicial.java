@@ -59,6 +59,7 @@ public class PanelInicial extends JPanel {
             Educacionseñales.setForeground(Color.WHITE);
             Educacionseñales.setBounds(550, 50, 400, 40);
             Educacionseñales.addActionListener((ActionEvent e) -> { 
+                cambiarPanel(new EducacionSenales());
     });
             Beneficiosbicicleta = new JButton("Beneficios de usar la bicicleta");
             Beneficiosbicicleta.setFont(Times); 
