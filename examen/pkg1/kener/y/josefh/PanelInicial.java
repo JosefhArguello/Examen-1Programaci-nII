@@ -16,6 +16,7 @@ public class PanelInicial extends JPanel {
     private JButton Beneficiostransporte;
     private JButton Consejosseguridad;
     private JButton Educacionseñales;
+    private JButton Examen;
 
     public void cambiarPanel(JPanel nuevoPanel){
         nuevoPanel.setSize(1000, 950);
@@ -70,8 +71,7 @@ public class PanelInicial extends JPanel {
             Beneficiosbicicleta.addActionListener((ActionEvent e) -> { 
                 cambiarPanel(new BeneficiosBicicleta());
     });
-    
-            
+
             add(Educacionseñales);
             add(Beneficiosbicicleta);
             add(Consejosseguridad);
