@@ -6,12 +6,9 @@ import java.awt.event.ActionEvent;
 
 import javax.swing.ButtonGroup;
 import javax.swing.JButton;
-import javax.swing.JComboBox;
 import javax.swing.JLabel;
-import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.JRadioButton;
-import javax.swing.JTextField;
 
 public class Examen extends JPanel{
 
@@ -33,10 +30,10 @@ public class Examen extends JPanel{
     JButton siguiente;
 
     public Examen(){
-
+        Aplicante Array = new Aplicante();
         setLayout(null);
         setSize(1000, 950);
-        setBackground(Color.RED);
+        setBackground(Color.GRAY);
         setVisible(true);
 
         Font Times = new Font("Times New Roman", Font.BOLD, 22);
@@ -48,26 +45,26 @@ public class Examen extends JPanel{
         add(pregunta1);
         pregunta1.setVisible(true);
         
-        pregunta2 = new JLabel("Seleccione el cargo del empleado:"); 
-        pregunta2.setBounds(20, 10, 960, 900); 
+        pregunta2 = new JLabel("1"); 
+        pregunta2.setBounds(20, 30, 960, 900); 
         pregunta2.setFont(Times); 
         pregunta2.setForeground(Color.WHITE); 
         add(pregunta2); 
-        pregunta2.setVisible(false);
+        pregunta2.setVisible(true);
 
-        pregunta3 = new JLabel("Seleccione el cargo del empleado:"); 
+        pregunta3 = new JLabel("2"); 
         pregunta3.setBounds(30, 100, 400, 30); 
         pregunta3.setFont(Times); 
         pregunta3.setForeground(Color.WHITE); 
         add(pregunta3); 
-        pregunta3.setVisible(false);
+        pregunta3.setVisible(true);
 
-        pregunta4 = new JLabel("Seleccione el cargo del empleado:"); 
-        pregunta4.setBounds(30, 100, 400, 30); 
+        pregunta4 = new JLabel("3"); 
+        pregunta4.setBounds(30, 90, 400, 30); 
         pregunta4.setFont(Times); 
         pregunta4.setForeground(Color.WHITE); 
         add(pregunta4);
-        pregunta4.setVisible(false);
+        pregunta4.setVisible(true);
 
         verdadero = new JRadioButton("Verdadero");
         falso = new JRadioButton("Falso");
@@ -86,8 +83,6 @@ public class Examen extends JPanel{
             } 
 
         });
-
-
         
         JButton siguiente = new JButton("Siguiente pregunta");
         siguiente.setFont(Times); 
@@ -96,6 +91,7 @@ public class Examen extends JPanel{
         siguiente.addActionListener((ActionEvent e) -> {    
             
         });
+        Array.datosAplicante("Eldatoolosdatosdelachingada", 1);;
 
 }
 

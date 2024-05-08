@@ -4,6 +4,7 @@ import java.awt.Color;
 import java.awt.Font;
 import java.awt.Image;
 import java.awt.event.ActionEvent;
+import java.util.ArrayList;
 
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
@@ -12,7 +13,7 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 
 public class  Examen1KenerYJosefh  extends JPanel{
-    
+    public static ArrayList<Aplicante> Array = new ArrayList<>();
     private JPanel menu;
     private JPanel panelIngresar;
 
