@@ -17,6 +17,7 @@ public class  Examen1KenerYJosefh  extends JPanel{
     private JPanel panelIngresar;
 
     JButton Menu;
+    JButton Examen;
     
     //
     public void cambiarPanel(JPanel nuevoPanel){
@@ -55,12 +56,22 @@ public class  Examen1KenerYJosefh  extends JPanel{
         Menu.setFont(Times);
         Menu.setBackground(Azul);
         Menu.setForeground(Color.WHITE);
-        Menu.setBounds(400, 20, 150, 30);
+        Menu.setBounds(300, 20, 150, 30);
         Menu.addActionListener((ActionEvent e) -> { 
             cambiarPanel(new PanelInicial());
+});    
 
-});     
+        Examen = new JButton("Examen");
+        Examen.setFont(Times);
+        Examen.setBackground(Azul);
+        Examen.setForeground(Color.WHITE);
+        Examen.setBounds(500, 20, 150, 30);
+        Examen.addActionListener((ActionEvent e) -> { 
+            cambiarPanel(new Examen());
+}); 
+
         menu.add(Menu);
+        menu.add(Examen);
         frame.add(menu);
         frame.add(panelIngresar);
         ImageIcon imageIconFondo = new ImageIcon("examen\\pkg1\\kener\\y\\josefh\\images\\ImportanciaVial.png");
