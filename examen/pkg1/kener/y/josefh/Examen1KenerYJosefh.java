@@ -87,7 +87,7 @@ public class  Examen1KenerYJosefh  extends JPanel{
     }
      
     public static void main(String[] args) {
-        Examen1KenerYJosefh a = new Examen1KenerYJosefh();
+        new Examen1KenerYJosefh();
        
     }
 }

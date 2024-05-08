@@ -42,5 +42,5 @@ public class EducacionSenales extends JPanel{
         add(Fondo);
 
     }
-    
 }
+

@@ -39,5 +39,4 @@ public class Aplicante {
     public String datos(){
         return datos;
     }
-
 }
