@@ -27,8 +27,7 @@ public class PanelInicial extends JPanel {
     }
         public PanelInicial(){
             Color Azul = new Color(1, 11, 64);
-            Color Gris = new Color(216, 217, 215); 
-       
+
             Font Times = new Font("Times New Roman", Font.BOLD, 22); 
             
             setLayout(null); 
@@ -115,12 +114,10 @@ public class PanelInicial extends JPanel {
             imageIconFondo.setImage(newImage3);
             JLabel Fondo = new JLabel(imageIconFondo);
             Fondo.setBounds(0, 30, 1000, 950);
-            add(Fondo);
-                      
+            add(Fondo);        
             repaint();
             revalidate();
-    
+
         }
-        
-        
+     
 }
