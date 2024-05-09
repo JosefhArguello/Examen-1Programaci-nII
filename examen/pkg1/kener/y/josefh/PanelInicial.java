@@ -17,7 +17,7 @@ public class PanelInicial extends JPanel {
     private JButton Consejosseguridad;
     private JButton Educacionseñales;
     private JButton Examen;
-
+    
     public void cambiarPanel(JPanel nuevoPanel){
         nuevoPanel.setSize(1000, 950);
         nuevoPanel.setLocation(0, 50); 
@@ -28,8 +28,7 @@ public class PanelInicial extends JPanel {
     }
         public PanelInicial(){
             Color Azul = new Color(1, 11, 64);
-            Color Gris = new Color(216, 217, 215); 
-       
+           
             Font Times = new Font("Times New Roman", Font.BOLD, 22); 
             
             setLayout(null); 
