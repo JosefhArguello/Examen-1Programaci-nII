@@ -17,9 +17,11 @@ import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 import javax.swing.JTextArea;
 
-
-public class Examen extends JPanel{
-
+/**
+ * Clase que permite realizar un examen sobre temas de seguridad vial y transporte público.
+ */
+public class Examen extends JPanel {
+     // Atributos y métodos de la clase Examen
     JLabel pregunta1;
     JLabel pregunta2;
     JLabel pregunta3;
@@ -37,7 +39,11 @@ public class Examen extends JPanel{
     JButton guardar;
 
     public Examen(){
-        
+        /**
+     * Constructor de la clase Examen.
+     * Permite realizar un examen y muestra los resultados.
+     */
+      // Código para configurar el diseño y permitir realizar el examen
         setLayout(null);
         setSize(1000,950);
         setBackground(Color.GRAY);
@@ -169,6 +175,7 @@ public class Examen extends JPanel{
                areaDatos.setText(sb.toString());
 
         });
+        
         ImageIcon imageIconFondo = new ImageIcon("examen\\pkg1\\kener\\y\\josefh\\images\\moon-2762111_1920.jpg");
             Image image3 = imageIconFondo.getImage(); // Obtiene la imagen del ImageIcon
             Image newImage3 = image3.getScaledInstance(1000, 950, Image.SCALE_SMOOTH); // Escala la imagen al tamaño deseado

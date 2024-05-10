@@ -7,11 +7,19 @@ import java.awt.Image;
 import javax.swing.ImageIcon;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
-
-public class BeneficiosTransporte extends JPanel{
-
+/**
+ * Clase que presenta los beneficios del transporte público.
+ */
+public class BeneficiosTransporte extends JPanel {
+    
+    /**
+     * Constructor de la clase BeneficiosTransporte.
+     * Muestra los beneficios del transporte público y una imagen relacionada.
+     */
     public BeneficiosTransporte () {
         
+         // Código para configurar el diseño y mostrar los beneficios del transporte público
+
         Color Azul = new Color(1, 11, 64);
         Font Times = new Font("Times New Roman", Font.BOLD, 28); 
         setLayout(null);

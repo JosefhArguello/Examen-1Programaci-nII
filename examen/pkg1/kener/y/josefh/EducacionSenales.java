@@ -8,9 +8,18 @@ import javax.swing.ImageIcon;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 
-public class EducacionSenales extends JPanel{
-
-    public EducacionSenales(){
+/**
+ * Clase que ofrece educación sobre las señales de tránsito.
+ */
+public class EducacionSenales extends JPanel {
+    
+    /**
+     * Constructor de la clase EducacionSenales.
+     * Ofrece educación sobre las señales de tránsito y una imagen relacionada.
+     */
+    public EducacionSenales() {
+        
+        // Código para configurar el diseño y mostrar la educación sobre señales de tránsito
 
         Color Azul = new Color(1, 11, 64);
         Font Times = new Font("Times New Roman", Font.BOLD, 28);

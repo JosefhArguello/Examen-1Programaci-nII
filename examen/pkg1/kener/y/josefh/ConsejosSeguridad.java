@@ -6,11 +6,19 @@ import java.awt.Image;
 import javax.swing.ImageIcon;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
-
-public class ConsejosSeguridad extends JPanel{
-
+/**
+ * Clase que proporciona consejos sobre seguridad vial.
+ */
+public class ConsejosSeguridad extends JPanel {
+    
+    /**
+     * Constructor de la clase ConsejosSeguridad.
+     * Proporciona consejos sobre seguridad vial y una imagen relacionada.
+     */
     public ConsejosSeguridad () {
         
+             // Código para configurar el diseño y mostrar los consejos de seguridad vial
+
             Color Azul = new Color(1, 11, 64);
             Font Times = new Font("Times New Roman", Font.BOLD, 28);
             

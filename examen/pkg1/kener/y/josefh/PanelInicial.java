@@ -11,13 +11,28 @@ import javax.swing.JButton;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 
+/**
+ * Clase que muestra el menú inicial con opciones relacionadas con la seguridad vial.
+ */
+
 public class PanelInicial extends JPanel {
+
+    // Atributos y métodos de la clase PanelInicial
+    
+    /**
+     * Constructor de la clase PanelInicial.
+     * Muestra las opciones del menú inicial y permite acceder a diferentes secciones.
+     */
+
     private JButton Beneficiosbicicleta;
     private JButton Beneficiostransporte;
     private JButton Consejosseguridad;
     private JButton Educacionseñales;
     private JButton Examen;
-    
+    /**
+     * Método para cambiar el panel actual por otro nuevo.
+     * El nuevo panel que se mostrará.
+     */
     public void cambiarPanel(JPanel nuevoPanel){
         nuevoPanel.setSize(1000, 950);
         nuevoPanel.setLocation(0, 50); 
@@ -27,6 +42,7 @@ public class PanelInicial extends JPanel {
         revalidate();
     }
         public PanelInicial(){
+            // Código para configurar el menú inicial y manejar las acciones de los botones
             Color Azul = new Color(1, 11, 64);
            
             Font Times = new Font("Times New Roman", Font.BOLD, 22); 
@@ -70,13 +86,14 @@ public class PanelInicial extends JPanel {
             Beneficiosbicicleta.addActionListener((ActionEvent e) -> { 
                 cambiarPanel(new BeneficiosBicicleta());
     });
-
+            
             add(Educacionseñales);
             add(Beneficiosbicicleta);
             add(Consejosseguridad);
             add(Beneficiostransporte);
             
-            
+            //Aqui se agregan y colocan todas las imagenes que se ocupan en los diferentes paneles
+
             ImageIcon imageIcon1 = new ImageIcon("examen\\pkg1\\kener\\y\\josefh\\images\\Recomendaciones-seguridadvial-para-ninios.png");
             Image image1 = imageIcon1.getImage(); // Obtiene la imagen del ImageIcon
             Image newImage1 = image1.getScaledInstance(300, 250, Image.SCALE_SMOOTH); // Escala la imagen al tamaño deseado

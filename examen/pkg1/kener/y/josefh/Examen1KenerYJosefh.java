@@ -5,22 +5,27 @@ import java.awt.Font;
 import java.awt.Image;
 import java.awt.event.ActionEvent;
 import java.util.ArrayList;
-
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 
+/**
+ * Clase principal que maneja la interfaz de usuario del programa.
+ */
 public class  Examen1KenerYJosefh  extends JPanel{
+    // Atributos y métodos de la clase Examen1KenerYJosefh
+    //Array list donde se guardan las cosas
     public static ArrayList<Aplicante> Array = new ArrayList<>();
     private JPanel menu;
     private JPanel panelIngresar;
-
+    
     JButton Menu;
     JButton Examen;
     
     //
+    //Metodo para cambiar paneles
     public void cambiarPanel(JPanel nuevoPanel){
         nuevoPanel.setSize(1000, 950);
         nuevoPanel.setLocation(0, 50); 
@@ -29,8 +34,12 @@ public class  Examen1KenerYJosefh  extends JPanel{
         panelIngresar.repaint();
         panelIngresar.revalidate();
     }
-   
+    /**
+    * Constructor de la clase Examen1KenerYJosefh.
+    * Configura la interfaz de usuario y permite cambiar entre diferentes paneles.
+    */
     public Examen1KenerYJosefh(){
+        // Código para configurar la interfaz de usuario y manejar los paneles
         Font Times = new Font("Times New Roman", Font.BOLD, 22);
         
         JFrame frame = new JFrame("Manual de transito");
@@ -86,7 +95,10 @@ public class  Examen1KenerYJosefh  extends JPanel{
         panelIngresar.revalidate();
   
     }
-     
+     /**
+     * Método principal que inicia la aplicación.
+     * Los argumentos de la línea de comandos.
+     */
     public static void main(String[] args) {
         new Examen1KenerYJosefh();
        

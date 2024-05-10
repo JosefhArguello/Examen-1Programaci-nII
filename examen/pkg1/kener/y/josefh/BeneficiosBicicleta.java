@@ -7,11 +7,16 @@ package examen.pkg1.kener.y.josefh;
     import javax.swing.ImageIcon;
     import javax.swing.JLabel;
     import javax.swing.JPanel;
-    
+  /**
+ * Clase que muestra los beneficios de andar en bicicleta.
+ */
     public class BeneficiosBicicleta extends JPanel{
-    
+     /**
+     * Constructor de la clase BeneficiosBicicleta.
+     * Muestra los beneficios de andar en bicicleta y una imagen relacionada.
+     */
         public BeneficiosBicicleta () {
-            
+            // Código para configurar el diseño y mostrar los beneficios de andar en bicicleta
             Color Azul = new Color(1, 11, 64);
             Font Times = new Font("Times New Roman", Font.BOLD, 28); 
             setLayout(null);
