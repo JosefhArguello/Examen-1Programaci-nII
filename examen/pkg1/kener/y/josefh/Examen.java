@@ -176,7 +176,7 @@ public class Examen extends JPanel {
 
         });
         
-        ImageIcon imageIconFondo = new ImageIcon("examen\\pkg1\\kener\\y\\josefh\\images\\moon-2762111_1920.jpg");
+        ImageIcon imageIconFondo = new ImageIcon("Examen-1Programaci-nII\\examen\\pkg1\\kener\\y\\josefh\\images\\moon-2762111_1920.jpg");
             Image image3 = imageIconFondo.getImage(); // Obtiene la imagen del ImageIcon
             Image newImage3 = image3.getScaledInstance(1000, 950, Image.SCALE_SMOOTH); // Escala la imagen al tamaño deseado
             imageIconFondo.setImage(newImage3);

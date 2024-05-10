@@ -94,7 +94,7 @@ public class PanelInicial extends JPanel {
             
             //Aqui se agregan y colocan todas las imagenes que se ocupan en los diferentes paneles
 
-            ImageIcon imageIcon1 = new ImageIcon("examen\\pkg1\\kener\\y\\josefh\\images\\Recomendaciones-seguridadvial-para-ninios.png");
+            ImageIcon imageIcon1 = new ImageIcon("Examen-1Programaci-nII\\examen\\pkg1\\kener\\y\\josefh\\images\\Recomendaciones-seguridadvial-para-ninios.png");
             Image image1 = imageIcon1.getImage(); // Obtiene la imagen del ImageIcon
             Image newImage1 = image1.getScaledInstance(300, 250, Image.SCALE_SMOOTH); // Escala la imagen al tamaño deseado
             imageIcon1.setImage(newImage1);
@@ -102,7 +102,7 @@ public class PanelInicial extends JPanel {
             imagenConsejos.setBounds(20,100,300,300);
             add(imagenConsejos);
      
-            ImageIcon imageIcon2 = new ImageIcon("examen\\pkg1\\kener\\y\\josefh\\images\\6287.jpg");
+            ImageIcon imageIcon2 = new ImageIcon("Examen-1Programaci-nII\\examen\\pkg1\\kener\\y\\josefh\\images\\6287.jpg");
             Image image2 = imageIcon2.getImage(); // Obtiene la imagen del ImageIcon
             Image newImage2 = image2.getScaledInstance(300, 200, Image.SCALE_SMOOTH); // Escala la imagen al tamaño deseado
             imageIcon2.setImage(newImage2);
@@ -110,7 +110,7 @@ public class PanelInicial extends JPanel {
             Consejosseguridad.setBounds(20,500,400,300);
             add(Consejosseguridad);
             
-            ImageIcon imageIcon5 = new ImageIcon("examen\\pkg1\\kener\\y\\josefh\\images\\43026.jpg");
+            ImageIcon imageIcon5 = new ImageIcon("Examen-1Programaci-nII\\examen\\pkg1\\kener\\y\\josefh\\images\\43026.jpg");
             Image image5 = imageIcon5.getImage(); // Obtiene la imagen del ImageIcon
             Image newImage5 = image5.getScaledInstance(300, 200, Image.SCALE_SMOOTH); // Escala la imagen al tamaño deseado
             imageIcon5.setImage(newImage5);
@@ -118,7 +118,7 @@ public class PanelInicial extends JPanel {
             Educacion.setBounds(550,100,400,300);
             add(Educacion);
     
-            ImageIcon imageIcon4 = new ImageIcon("examen\\pkg1\\kener\\y\\josefh\\images\\6241331.jpg");
+            ImageIcon imageIcon4 = new ImageIcon("Examen-1Programaci-nII\\examen\\pkg1\\kener\\y\\josefh\\images\\6241331.jpg");
             Image image4 = imageIcon4.getImage(); // Obtiene la imagen del ImageIcon
             Image newImage4 = image4.getScaledInstance(300, 200, Image.SCALE_SMOOTH); // Escala la imagen al tamaño deseado
             imageIcon4.setImage(newImage4);
@@ -126,7 +126,7 @@ public class PanelInicial extends JPanel {
             Beneficiosbicicleta.setBounds(550,500,400,300);
             add(Beneficiosbicicleta);
     
-            ImageIcon imageIconFondo = new ImageIcon("examen\\pkg1\\kener\\y\\josefh\\images\\trucks-highway-mountain-sunset.jpg");
+            ImageIcon imageIconFondo = new ImageIcon("Examen-1Programaci-nII\\examen\\pkg1\\kener\\y\\josefh\\images\\trucks-highway-mountain-sunset.jpg");
             Image image3 = imageIconFondo.getImage(); // Obtiene la imagen del ImageIcon
             Image newImage3 = image3.getScaledInstance(1000, 950, Image.SCALE_SMOOTH); // Escala la imagen al tamaño deseado
             imageIconFondo.setImage(newImage3);

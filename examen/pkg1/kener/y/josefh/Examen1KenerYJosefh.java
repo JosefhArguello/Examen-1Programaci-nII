@@ -84,7 +84,7 @@ public class  Examen1KenerYJosefh  extends JPanel{
         menu.add(Examen);
         frame.add(menu);
         frame.add(panelIngresar);
-        ImageIcon imageIconFondo = new ImageIcon("examen\\pkg1\\kener\\y\\josefh\\images\\ImportanciaVial.png");
+        ImageIcon imageIconFondo = new ImageIcon("Examen-1Programaci-nII\\examen\\pkg1\\kener\\y\\josefh\\images\\ImportanciaVial.png");
         Image image3 = imageIconFondo.getImage(); // Obtiene la imagen del ImageIcon
         Image newImage3 = image3.getScaledInstance(1000, 900, Image.SCALE_SMOOTH); // Escala la imagen al tamaño deseado
         imageIconFondo.setImage(newImage3);

@@ -43,7 +43,7 @@ public class ConsejosSeguridad extends JPanel {
             Texto.setBounds(20, 10, 960, 900); // Establecer posición y tamaño
             
             add(Texto);
-            ImageIcon imageIconFondo = new ImageIcon("examen\\pkg1\\kener\\y\\josefh\\images\\traffic-cones-line-up-along-sunlit-asphalt-road.jpg");
+            ImageIcon imageIconFondo = new ImageIcon("Examen-1Programaci-nII\\examen\\pkg1\\kener\\y\\josefh\\images\\traffic-cones-line-up-along-sunlit-asphalt-road.jpg");
             Image image3 = imageIconFondo.getImage(); // Obtiene la imagen del ImageIcon
             Image newImage3 = image3.getScaledInstance(1000, 950, Image.SCALE_SMOOTH); // Escala la imagen al tamaño deseado
             imageIconFondo.setImage(newImage3);
